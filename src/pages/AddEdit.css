@@ -1,0 +1,85 @@
+/* AddEdit.css */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .form-wrapper {
+    width: 400px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-actions {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  button[type="button"] {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+
+  label:hover{
+    transform: translateX(-4px);
+    box-shadow: 0 4px 8px rgba(14, 2, 2, 0.1);
+  }
+
+  input:hover  {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(14, 2, 2, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .form-wrapper {
+      width: 100%;
+      padding: 0 20px;
+    }
+  
+    input[type="text"],
+    input[type="email"] {
+      padding: 6px;
+    }
+  
+    button {
+      padding: 6px 10px;
+    }
+  }
+  

@@ -1,0 +1,61 @@
+.contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 79vh;
+    background-color: #f1f1f1;
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    flex-direction: column;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .info-container {
+    text-align: center;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .contact-card {
+      width: 90%;
+    }
+  
+    .logo-container {
+      flex-wrap: wrap;
+    }
+  
+    .logo {
+      margin: 10px;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .contact-card {
+    animation: fadeIn 5s;
+  }
+  
